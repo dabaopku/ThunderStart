@@ -1,0 +1,56 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server Compact Edition
+-- --------------------------------------------------
+-- Date Created: 11/30/2011 23:57:33
+-- Generated from EDMX file: D:\Csharp程序设计\ThunderStart\Model.edmx
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- NOTE: if the constraint does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- NOTE: if the table does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+    DROP TABLE [App];
+GO
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'App'
+CREATE TABLE [App] (
+    [id] int IDENTITY(1,1) NOT NULL,
+    [name] nvarchar(4000)  NOT NULL,
+    [shortName] nvarchar(4000)  NOT NULL,
+    [cmd] nvarchar(4000)  NOT NULL,
+    [desciption] nvarchar(4000)  NOT NULL,
+    [count] int  NOT NULL,
+    [pinyin] nvarchar(4000)  NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [id] in table 'App'
+ALTER TABLE [App]
+ADD CONSTRAINT [PK_App]
+    PRIMARY KEY ([id] );
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------
